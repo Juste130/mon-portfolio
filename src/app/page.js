@@ -9,7 +9,7 @@ import { projects } from '@/data/projects'
 import ToolIcon from '@/components/ToolIcon'
 import ProjectCard from '@/components/ProjectCard'
 import Timeline from '@/components/Timeline'
-import { ArrowRight, Github, Mail, Code2, Cpu, MapPin, Download } from 'lucide-react'
+import { ArrowRight, Github, Mail, Code2, Cpu, MapPin } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
 const fadeInUp = {
@@ -300,7 +300,7 @@ export default function Home() {
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <a
-                href="mailto:justeholuezo@gmail.com"
+                href="mailto:houezojuste0@gmail.com"
                 className="btn-primary w-full sm:w-auto justify-center"
               >
                 <Mail className="w-4 h-4 mr-2" />
