@@ -1,29 +1,36 @@
-import Link from 'next/link'
+'use client'
+
+import { useLanguage } from '@/context/LanguageContext'
+import { Github, Twitter, Linkedin } from 'lucide-react'
 
 export default function Footer() {
+  const { t } = useLanguage()
+
   return (
-    <footer className="bg-white border-t border-gray-200 mt-auto">
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <p className="text-gray-600">
-              &copy; {new Date().getFullYear()} Mon Portfolio. Tous droits réservés.
+    <footer className="bg-slate-900 text-slate-400 mt-auto">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 py-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="text-white font-bold text-lg font-[family-name:var(--font-space-grotesk)]">
+              Juste<span className="text-blue-400">Dev</span>
             </p>
+            <p className="text-sm mt-1">Full-Stack & Blockchain Developer</p>
           </div>
-          <div className="flex space-x-6">
-            <Link href="/" className="text-gray-600 hover:text-blue-600">
-              Accueil
-            </Link>
-            <Link href="/about" className="text-gray-600 hover:text-blue-600">
-              À propos
-            </Link>
-            <Link href="/projects" className="text-gray-600 hover:text-blue-600">
-              Projets
-            </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-blue-600">
-              Contact
-            </Link>
+
+          <div className="flex items-center gap-4">
+            <a
+              href="https://github.com/Juste130"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg hover:bg-slate-800 hover:text-white transition-colors"
+            >
+              <Github size={20} />
+            </a>
           </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+          © {new Date().getFullYear()} Juste HOUEZO — Built with Next.js & ❤️
         </div>
       </div>
     </footer>

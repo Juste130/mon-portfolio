@@ -1,48 +1,66 @@
 export const projects = [
   {
     id: 1,
-    title: 'Application E-commerce',
-    description: 'Plateforme complète avec panier, paiement et administration.',
-    tags: ['Next.js', 'React', 'Stripe'],
-    githubUrl: 'https://github.com/votreusername/projet-ecommerce',
-    liveUrl: 'https://mon-ecommerce.vercel.app'
+    title: 'Contractify',
+    description: 'Plateforme de gestion de contrats basée sur les NFTs et la Blockchain Polygon. Gère la création, la signature et le respect des clauses.',
+    tags: ['TypeScript', 'Solidity', 'Polygon', 'Web3'],
+    type: 'Projet Solo',
+    githubUrl: 'https://github.com/Juste130/contractify',
+    category: 'Blockchain'
   },
   {
     id: 2,
-    title: 'Plateforme de Blog',
-    description: 'Système de blog avec articles, commentaires et likes.',
-    tags: ['Next.js', 'MongoDB', 'Auth'],
-    githubUrl: 'https://github.com/votreusername/projet-blog',
-    liveUrl: 'https://mon-blog.vercel.app'
+    title: 'Fitness Latour',
+    description: 'Site web pour une salle de sport et de fitness.',
+    tags: ['JavaScript', 'React', 'Next.js'],
+    type: 'Projet Solo',
+    githubUrl: 'https://github.com/Juste130/fitness-latour',
+    liveUrl: 'https://fitness-latour.vercel.app',
+    category: 'Frontend'
   },
   {
     id: 3,
-    title: 'Application de Gestion de Tâches',
-    description: 'Outil de productivité avec drag-and-drop et catégories.',
-    tags: ['React', 'Redux', 'Firebase'],
-    githubUrl: 'https://github.com/votreusername/todo-app',
-    liveUrl: 'https://mes-taches.vercel.app'
+    title: 'La Révélation API',
+    description: 'Backend pour une plateforme de réservation du complexe hôtelier La Révélation.',
+    tags: ['Node.js', 'Express', 'API'],
+    type: 'Projet Solo',
+    githubUrl: 'https://github.com/Juste130/La_Revelation_api',
+    category: 'Backend'
   },
   {
     id: 4,
-    title: 'Dashboard Analytique',
-    description: 'Tableau de bord avec graphiques et visualisation de données.',
-    tags: ['Next.js', 'Chart.js', 'API'],
-    githubUrl: 'https://github.com/votreusername/analytics-dashboard',
+    title: 'Hackaton NASA 2025',
+    description: 'Projet réalisé dans le cadre du Hackaton NASA 2025.',
+    tags: ['JavaScript', 'Hackathon'],
+    type: 'Collaboration',
+    githubUrl: 'https://github.com/Juste130/Hackaton_nasa_2025',
+    category: 'Fullstack'
   },
   {
     id: 5,
-    title: 'Réseau Social',
-    description: 'Plateforme sociale avec profils, messages et notifications.',
-    tags: ['React', 'Node.js', 'Socket.io'],
-    githubUrl: 'https://github.com/votreusername/social-app',
+    title: 'Teido Pay',
+    description: 'Solution de paiement innovante.',
+    tags: ['JavaScript', 'Fintech'],
+    type: 'Projet Solo',
+    githubUrl: 'https://github.com/Juste130/teido-pay',
+    category: 'Fullstack'
   },
   {
     id: 6,
-    title: 'Application Météo',
-    description: 'Application météo avec prévisions et localisation.',
-    tags: ['React', 'API', 'Geolocation'],
-    githubUrl: 'https://github.com/votreusername/weather-app',
-    liveUrl: 'https://ma-meteo.vercel.app'
+    title: 'Basket Benin Info',
+    description: 'Plateforme d\'information sur le basketball au Bénin.',
+    tags: ['TypeScript', 'Frontend'],
+    type: 'Projet Solo',
+    githubUrl: 'https://github.com/Juste130/basket-benin-info',
+    category: 'Frontend'
+  },
+  {
+    id: 7,
+    title: 'Todo App Cyberincub',
+    description: 'Application de gestion de tâches développée lors de mon passage chez Cyberincub.',
+    tags: ['TypeScript', 'React'],
+    type: 'Formation',
+    githubUrl: 'https://github.com/Juste130/todo-app-cyberincub',
+    category: 'Frontend'
   }
-]
+];
