@@ -226,7 +226,7 @@ export default function Home() {
                 </h3>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
                   {tools.map((tool) => (
-                    <ToolIcon key={tool.name} name={tool.name} icon={tool.icon} color={tool.color} />
+                    <ToolIcon key={tool.name} name={tool.name} icon={tool.icon} color={tool.color} image={tool.image} />
                   ))}
                 </div>
               </motion.div>

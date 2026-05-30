@@ -1,3 +1,5 @@
+import { footer } from "framer-motion/client";
+
 export const en = {
   nav: {
     home: 'Home',
@@ -91,12 +93,53 @@ export const en = {
     live: "Live Demo",
     source: "Source Code",
     solo: "Solo Project",
-    collab: "Collaboration"
+    collab: "Collaboration",
+    training: "Training",
+    projectsList: [
+      {
+        id: 1,
+        title: 'Contractify',
+        description: 'Smart contract management platform based on NFTs and Polygon Blockchain. Handles contract creation, signing, and clause enforcement.',
+      },
+      {
+        id: 2,
+        title: 'Fitness Latour',
+        description: 'Non-responsive website for a fictional fitness gym to practice my skills.',
+      },
+      {
+        id: 3,
+        title: 'La Révélation API',
+        description: 'Backend for a booking platform for the La Révélation hotel complex.',
+      },
+      {
+        id: 4,
+        title: 'Hackathon NASA 2025',
+        description: 'Apollo project created for the NASA Hackathon 2025, an intelligent search engine based on NASA articles.',
+      },
+      {
+        id: 5,
+        title: 'Teido Pay',
+        description: 'Innovative payment solution. Training project to strengthen my skills.',
+      },
+      {
+        id: 6,
+        title: 'Basket Benin Info',
+        description: 'Information platform about basketball in Benin. Training project to strengthen my skills.',
+      },
+      {
+        id: 7,
+        title: 'Todo App Cyberincub',
+        description: 'Task management application developed during my time at Cyberincub. Training project to practice CI/CD.',
+      }
+    ]
   },
   contact: {
     title: "Ready to collaborate?",
     subtitle: "I am always open to discussing new projects, technical challenges, or exciting opportunities in Fullstack or Blockchain.",
     email: "Send an email",
     github: "My GitHub"
+  },
+  footer: {
+    text: "© {year} Juste HOUEZO — All rights reserved.",
   }
 }

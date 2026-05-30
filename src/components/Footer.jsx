@@ -26,11 +26,27 @@ export default function Footer() {
             >
               <Github size={20} />
             </a>
+            <a
+              href="https://twitter.com/Juste130"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg hover:bg-slate-800 hover:text-white transition-colors"
+            >
+              <Twitter size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/juste-houezo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg hover:bg-slate-800 hover:text-white transition-colors"
+            >
+              <Linkedin size={20} />
+            </a>
           </div>
         </div>
 
         <div className="mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
-          © {new Date().getFullYear()} Juste HOUEZO — Built with Next.js & ❤️
+          {t.footer.text.replace('{year}', new Date().getFullYear())}
         </div>
       </div>
     </footer>

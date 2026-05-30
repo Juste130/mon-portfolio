@@ -91,12 +91,53 @@ export const fr = {
     live: "Voir le site",
     source: "Code source",
     solo: "Projet Solo",
-    collab: "Collaboration"
+    collab: "Collaboration",
+    training: "Formation",
+    projectsList: [
+      {
+        id: 1,
+        title: 'Contractify',
+        description: 'Plateforme de gestion de contrats basée sur les NFTs et la Blockchain Polygon. Gère la création, la signature et le respect des clauses.',
+      },
+      {
+        id: 2,
+        title: 'Fitness Latour',
+        description: 'Site web non responsive pour une salle de sport et de fitness fictive pour m\'entrainer.',
+      },
+      {
+        id: 3,
+        title: 'La Révélation API',
+        description: 'Backend pour une plateforme de réservation du complexe hôtelier La Révélation.',
+      },
+      {
+        id: 4,
+        title: 'Hackaton NASA 2025',
+        description: 'Projet Apollon réalisé dans le cadre du Hackaton NASA 2025 qui est un moteur de recherche sur la base des articles de la NASA.',
+      },
+      {
+        id: 5,
+        title: 'Teido Pay',
+        description: 'Solution de paiement innovante. Projet d\'entrainement pour renforcer mes compétences.',
+      },
+      {
+        id: 6,
+        title: 'Basket Benin Info',
+        description: 'Plateforme d\'information sur le basketball au Bénin. Projet d\'entrainement pour renforcer mes compétences.',
+      },
+      {
+        id: 7,
+        title: 'Todo App Cyberincub',
+        description: 'Application de gestion de tâches développée lors de mon passage chez Cyberincub. Projet d\'entrainement pour m\'exercer sur le CI/CD',
+      }
+    ]
   },
   contact: {
     title: "Prêt à collaborer ?",
     subtitle: "Je suis toujours ouvert à discuter de nouveaux projets, de défis techniques ou d'opportunités intéressantes en Fullstack ou Blockchain.",
     email: "M'envoyer un email",
     github: "Mon GitHub"
+  },
+  footer: {
+    text: "© {year} Juste HOUEZO — Tous droits réservés.",
   }
 }

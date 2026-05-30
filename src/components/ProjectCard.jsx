@@ -43,11 +43,21 @@ export default function ProjectCard({ project }) {
     bg: 'bg-slate-50', text: 'text-slate-700', border: 'border-slate-200', dot: 'bg-slate-400'
   }
 
+  // Get translated project data
+  const translatedProject = t.projects.projectsList?.find(p => p.id === project.id)
+  const displayTitle = translatedProject?.title || project.title
+  const displayDescription = translatedProject?.description || project.description
+
   const typeLabelMap = {
     'Projet Solo': t.projects.solo,
+    'Solo Project': t.projects.solo,
     'Collaboration': t.projects.collab,
-    'Formation': 'Formation',
+    'Formation': t.projects.training,
+    'Training': t.projects.training,
+    'Entrainement': t.projects.training,
   }
+
+  const displayType = typeLabelMap[project.type] || project.type
 
   return (
     <div className="project-card">
@@ -58,18 +68,18 @@ export default function ProjectCard({ project }) {
           {cfg.label}
         </span>
         <span className="text-xs text-slate-400 font-medium">
-          {typeLabelMap[project.type] || project.type}
+          {displayType}
         </span>
       </div>
 
       {/* Title */}
       <h3 className="text-xl font-bold text-slate-900 font-[family-name:var(--font-space-grotesk)] mb-2 group-hover:text-blue-600 transition-colors">
-        {project.title}
+        {displayTitle}
       </h3>
 
       {/* Description */}
       <p className="text-sm text-slate-500 leading-relaxed mb-5 flex-grow">
-        {project.description}
+        {displayDescription}
       </p>
 
       {/* Tags */}
