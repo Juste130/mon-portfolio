@@ -62,5 +62,34 @@ export const projects = [
     type: 'Formation',
     githubUrl: 'https://github.com/Juste130/todo-app-cyberincub',
     category: 'Frontend'
+  },
+  {
+    id: 8,
+    title: 'La Révélation - Gestion Motel',
+    description: 'Application web de gestion pour le complexe hôtelier La Révélation. Digitalise le registre papier : suivi des stocks/boissons, chiffre d\'affaires hebdomadaire, accès sécurisé par code PIN pour la direction.',
+    tags: ['JavaScript', 'React', 'Recharts'],
+    type: 'Projet Solo',
+    liveUrl: 'https://gestion-motel-larevelation.netlify.app/',
+    category: 'Fullstack'
+  },
+  {
+    id: 9,
+    title: 'Multi-Party Escrow DApp',
+    description: 'DApp de séquestre (escrow) multi-parties sur la Blockchain. Permet à plusieurs parties de verrouiller des fonds dans un smart contract et de les libérer selon des conditions convenues.',
+    tags: ['Solidity', 'Hardhat', 'Web3'],
+    type: 'Projet Solo',
+    liveUrl: 'https://multi-party-escrow.vercel.app/',
+    githubUrl: "https://github.com/Juste130/ICP-8C2D4268-2026-REPO/tree/main/Week3/multi-party-escrow",
+    category: 'Blockchain'
+  },
+  {
+    id: 10,
+    title: 'Decentralized Voting DApp',
+    description: 'DApp de vote décentralisé basée sur des smart contracts, garantissant la transparence et l\'immuabilité des résultats du scrutin.',
+    tags: ['Solidity', 'Hardhat', 'Web3'],
+    type: 'Projet Solo',
+    liveUrl: 'https://voting-dapp-five-delta.vercel.app/',
+    githubUrl: "https://github.com/Juste130/ICP-8C2D4268-2026-REPO/tree/main/Week2/project3-voting-dApp/voting-dapp",
+    category: 'Blockchain'
   }
 ];

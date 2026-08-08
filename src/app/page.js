@@ -120,7 +120,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-medium">Blockchain</p>
-                    <p className="text-sm text-slate-800 font-bold">EVM Expert</p>
+                    <p className="text-sm text-slate-800 font-bold">EVM</p>
                   </div>
                 </div>
               </div>
