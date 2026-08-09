@@ -27,7 +27,7 @@ export const en = {
         id: 10,
         year: 'June 2026 - Present',
         title: 'Web2 Developer Internship (Banca Engineering Bénin)',
-        description: 'On-site professional internship at Banca Engineering Bénin. Web2 development on many projects in the Building & Public Works sector.',
+        description: 'On-site professional internship at Banca Engineering Bénin. Web2 development on numerous projects for the Building & Public Works sector.',
         role: 'Fullstack Developer',
       },
       {

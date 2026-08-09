@@ -29,7 +29,7 @@ export default function Timeline() {
               <span className={`absolute -left-[45px] top-1.5 w-3.5 h-3.5 rounded-full ${colors.dot} ring-4 ring-white shadow-sm`} />
 
               {/* Year chip */}
-              <span className="text-xs font-semibold text-slate-400 tracking-wider uppercase">
+              <span className="text-xs font-semibold text-slate-500 tracking-wider uppercase">
                 {exp.year}
               </span>
 

@@ -3,16 +3,16 @@ export const projects = [
     id: 1,
     title: 'Contractify',
     description: 'Plateforme de gestion de contrats basée sur les NFTs et la Blockchain Polygon. Gère la création, la signature et le respect des clauses.',
-    tags: ['TypeScript', 'Solidity', 'Polygon', 'Web3'],
+    tags: ['TypeScript', 'Hardhat', 'Polygon', 'Next.js'],
     type: 'Projet Solo',
     githubUrl: 'https://github.com/Juste130/contractify',
-    category: 'DEFI'
+    category: 'Blockchain'
   },
   {
     id: 2,
     title: 'Fitness Latour',
     description: 'Site web non responsive pour une salle de sport et de fitness fictive pour m\'entrainer.',
-    tags: ['JavaScript', 'React', 'Next.js'],
+    tags: ['JavaScript', 'React', 'Tailwind'],
     type: 'Entrainement',
     githubUrl: 'https://github.com/Juste130/fitness-latour',
     liveUrl: 'https://fitness-latour.vercel.app',
@@ -31,7 +31,7 @@ export const projects = [
     id: 4,
     title: 'Hackaton NASA 2025',
     description: 'Projet Apollon réalisé dans le cadre du Hackaton NASA 2025 qui est un moteur de recherche sur la base des articles de la NASA.',
-    tags: ['JavaScript', 'Hackathon'],
+    tags: ['JavaScript', 'Next.js', 'Hackathon'],
     type: 'Collaboration',
     githubUrl: 'https://github.com/Juste130/Hackaton_nasa_2025',
     category: 'Fullstack'
@@ -40,7 +40,7 @@ export const projects = [
     id: 5,
     title: 'Teido Pay',
     description: 'Solution de paiement innovante. Projet d\'entrainement pour renforcer mes compétences.',
-    tags: ['JavaScript', 'Fintech'],
+    tags: ['JavaScript', 'Next.js', 'Tailwind'],
     type: 'Projet Solo',
     githubUrl: 'https://github.com/Juste130/teido-pay',
     category: 'Fullstack'
@@ -49,7 +49,7 @@ export const projects = [
     id: 6,
     title: 'Basket Benin Info',
     description: 'Plateforme d\'information sur le basketball au Bénin. Projet d\'entrainement pour renforcer mes compétences.',
-    tags: ['TypeScript', 'Frontend'],
+    tags: ['TypeScript', 'Next.js', 'Tailwind'],
     type: 'Projet Solo',
     githubUrl: 'https://github.com/Juste130/basket-benin-info',
     category: 'Frontend'
@@ -67,7 +67,7 @@ export const projects = [
     id: 8,
     title: 'La Révélation - Gestion Motel',
     description: 'Application web de gestion pour le complexe hôtelier La Révélation. Digitalise le registre papier : suivi des stocks/boissons, chiffre d\'affaires hebdomadaire, accès sécurisé par code PIN pour la direction.',
-    tags: ['JavaScript', 'React', 'Recharts'],
+    tags: ['JavaScript', 'Next.js', 'Tailwind'],
     type: 'Projet Solo',
     liveUrl: 'https://gestion-motel-larevelation.netlify.app/',
     category: 'Fullstack'
@@ -76,7 +76,7 @@ export const projects = [
     id: 9,
     title: 'Multi-Party Escrow DApp',
     description: 'DApp de séquestre (escrow) multi-parties sur la Blockchain. Permet à plusieurs parties de verrouiller des fonds dans un smart contract et de les libérer selon des conditions convenues.',
-    tags: ['Solidity', 'Hardhat', 'Web3'],
+    tags: ['Sepolia', 'Foundry', 'React'],
     type: 'Projet Solo',
     liveUrl: 'https://multi-party-escrow.vercel.app/',
     githubUrl: "https://github.com/Juste130/ICP-8C2D4268-2026-REPO/tree/main/Week3/multi-party-escrow",
@@ -86,7 +86,7 @@ export const projects = [
     id: 10,
     title: 'Decentralized Voting DApp',
     description: 'DApp de vote décentralisé basée sur des smart contracts, garantissant la transparence et l\'immuabilité des résultats du scrutin.',
-    tags: ['Solidity', 'Hardhat', 'Web3'],
+    tags: ['Polygon', 'Hardhat', 'React'],
     type: 'Projet Solo',
     liveUrl: 'https://voting-dapp-five-delta.vercel.app/',
     githubUrl: "https://github.com/Juste130/ICP-8C2D4268-2026-REPO/tree/main/Week2/project3-voting-dApp/voting-dapp",
