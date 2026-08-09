@@ -24,6 +24,20 @@ export const en = {
     subtitle: "My professional evolution and training, shaping my dual expertise today.",
     experiences: [
       {
+        id: 10,
+        year: 'June 2026 - Present',
+        title: 'Web2 Developer Internship (Banca Engineering Bénin)',
+        description: 'On-site professional internship at Banca Engineering Bénin. Web2 development on numerous projects for the Building & Public Works sector.',
+        role: 'Fullstack Developer',
+      },
+      {
+        id: 9,
+        year: 'June 2026 - July 2026',
+        title: 'Blockchain Development Internship (InternCareerPath)',
+        description: 'Remote blockchain development internship at InternCareerPath. Design, testing, and deployment of smart contracts as part of DApps.',
+        role: 'Blockchain Developer',
+      },
+      {
         id: 1,
         year: 'May 2026',
         title: 'Web3 & Smart Contracts Specialization',
@@ -130,6 +144,21 @@ export const en = {
         id: 7,
         title: 'Todo App Cyberincub',
         description: 'Task management application developed during my time at Cyberincub. Training project to practice CI/CD.',
+      },
+      {
+        id: 8,
+        title: 'La Révélation - Motel Management',
+        description: 'Management web app for the La Révélation hotel complex. Digitizes the paper register: stock/beverage tracking, weekly revenue, PIN-protected access for management.',
+      },
+      {
+        id: 9,
+        title: 'Multi-Party Escrow DApp',
+        description: 'Multi-party escrow DApp on the Blockchain. Lets several parties lock funds in a smart contract and release them once agreed conditions are met.',
+      },
+      {
+        id: 10,
+        title: 'Decentralized Voting DApp',
+        description: 'Decentralized voting DApp built on smart contracts, ensuring transparency and immutability of ballot results.',
       }
     ]
   },

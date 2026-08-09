@@ -9,7 +9,7 @@ export const categorizedSkills = [
   },
   {
     category: 'Blockchain (EVM)',
-    items: ['Solidity', 'Hardhat', 'Ethers.js', 'Web3.js', 'Polygon', 'Smart Contracts', 'Etherscan'],
+    items: ['Solidity', 'Hardhat', 'Ethers.js', 'Foundry', 'Web3.js', 'Polygon', 'Sepolia', 'Smart Contracts', 'Etherscan'],
   },
   {
     category: 'Outils & IA',

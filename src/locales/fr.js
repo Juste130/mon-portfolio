@@ -22,6 +22,20 @@ export const fr = {
     subtitle: "Mon évolution professionnelle et mes formations, façonnant ma double expertise d'aujourd'hui.",
     experiences: [
       {
+        id: 10,
+        year: 'Juin 2026 - Présent',
+        title: 'Stage Développeur Web2 (Banca Engineering Bénin)',
+        description: 'Stage professionnel en présentiel chez Banca Engineering Bénin. Développement Web2 sur plusieurs projets dans le secteur du Bâtiment et des Travaux Publics.',
+        role: 'Développeur Fullstack',
+      },
+      {
+        id: 9,
+        year: 'Juin 2026 - Juillet 2026',
+        title: 'Stage Développement Blockchain (InternCareerPath)',
+        description: 'Stage à distance en développement blockchain chez InternCareerPath. Conception, test et déploiement de smart contracts dans le cadre de DApps.',
+        role: 'Développeur Blockchain',
+      },
+      {
         id: 1,
         year: 'Mai 2026',
         title: 'Spécialisation Web3 & Smart Contracts',
@@ -128,6 +142,21 @@ export const fr = {
         id: 7,
         title: 'Todo App Cyberincub',
         description: 'Application de gestion de tâches développée lors de mon passage chez Cyberincub. Projet d\'entrainement pour m\'exercer sur le CI/CD',
+      },
+      {
+        id: 8,
+        title: 'La Révélation - Gestion Motel',
+        description: 'Application web de gestion pour le complexe hôtelier La Révélation. Digitalise le registre papier : suivi des stocks/boissons, chiffre d\'affaires hebdomadaire, accès sécurisé par code PIN pour la direction.',
+      },
+      {
+        id: 9,
+        title: 'Multi-Party Escrow DApp',
+        description: 'DApp de séquestre (escrow) multi-parties sur la Blockchain. Permet à plusieurs parties de verrouiller des fonds dans un smart contract et de les libérer selon des conditions convenues.',
+      },
+      {
+        id: 10,
+        title: 'Decentralized Voting DApp',
+        description: 'DApp de vote décentralisé basée sur des smart contracts, garantissant la transparence et l\'immuabilité des résultats du scrutin.',
       }
     ]
   },

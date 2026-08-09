@@ -65,6 +65,7 @@ export default function Navigation() {
             {/* Language switcher */}
             <button
               onClick={toggleLanguage}
+              aria-label={language === 'en' ? 'Passer le site en français' : 'Switch site to English'}
               className="ml-4 flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-slate-700 border border-slate-200 rounded-lg hover:border-blue-400 hover:text-blue-600 hover:bg-blue-50 transition-all"
             >
               <Globe size={14} />
@@ -76,6 +77,7 @@ export default function Navigation() {
           <div className="md:hidden flex items-center gap-3">
             <button
               onClick={toggleLanguage}
+              aria-label={language === 'en' ? 'Passer le site en français' : 'Switch site to English'}
               className="flex items-center gap-1 text-xs font-bold text-slate-600 border border-slate-200 rounded-lg px-2 py-1.5"
             >
               <Globe size={13} />
@@ -83,9 +85,12 @@ export default function Navigation() {
             </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
               className="p-2 text-slate-700 rounded-lg hover:bg-slate-100"
             >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 {isMenuOpen
                   ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -97,7 +102,7 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-3 py-3 border-t border-slate-100">
+          <div id="mobile-menu" className="md:hidden mt-3 py-3 border-t border-slate-100">
             <div className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <a

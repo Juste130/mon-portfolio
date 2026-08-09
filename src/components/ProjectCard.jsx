@@ -34,6 +34,14 @@ const categoryConfig = {
     border: 'border-blue-200',
     dot: 'bg-blue-500',
   },
+  'DEFI': {
+    label: 'DeFi',
+    icon: '💰',
+    bg: 'bg-pink-50',
+    text: 'text-pink-700',
+    border: 'border-pink-200',
+    dot: 'bg-pink-500',
+  },
 }
 
 export default function ProjectCard({ project }) {
@@ -67,7 +75,7 @@ export default function ProjectCard({ project }) {
           <span>{cfg.icon}</span>
           {cfg.label}
         </span>
-        <span className="text-xs text-slate-400 font-medium">
+        <span className="text-xs text-slate-500 font-medium">
           {displayType}
         </span>
       </div>
