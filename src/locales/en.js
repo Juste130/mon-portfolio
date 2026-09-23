@@ -1,21 +1,20 @@
-import { footer } from "framer-motion/client";
-
 export const en = {
   nav: {
     home: 'Home',
     journey: 'Journey',
-    skills: 'Skills',
+    skills: 'What I do',
     projects: 'Projects',
     contact: 'Contact',
   },
   hero: {
     greeting: "Hi, I'm",
-    available: 'Available for new projects',
-    subtitle: "I build robust digital experiences.",
-    fullstack: "Full-Stack Developer",
-    fullstackDesc: "Frontend focused. I create ultra-responsive, fluid, and accessible user interfaces powered by robust Backend architectures (Next.js, Node.js, Laravel).",
-    blockchain: "Blockchain Developer (EVM)",
-    blockchainDesc: "Specialized in the EVM ecosystem (Polygon, Ethereum). I design secure Smart Contracts (Solidity) and innovative DApps.",
+    available: 'Available for new projects — remote friendly',
+    roleFrontend: 'Frontend Developer',
+    roleFullstack: 'Fullstack (Web2)',
+    roleWeb3: 'Web3 Engineer',
+    subtitleLead: "I build interfaces that are polished, fast, and accessible.",
+    subtitleWeb2: "I ship full-stack Web2 products end to end.",
+    subtitleWeb3: "I design, test, and secure smart contracts across the EVM ecosystem.",
     viewProjects: "View my projects",
     contactMe: "Contact me"
   },
@@ -101,6 +100,23 @@ export const en = {
     expertise: "Technical Expertise",
     environment: "Tools & Environment"
   },
+  capabilities: {
+    eyebrow: 'What I do',
+    title: 'Frontend first — Web2 and Web3 in depth',
+    subtitle: "A deliberate frontend focus, backed by solid Web2 architecture and real Web3/EVM engineering.",
+    frontend: {
+      label: 'Frontend',
+      description: 'React & Next.js interfaces, design systems, motion, accessibility and performance as first-class concerns.',
+    },
+    web2: {
+      label: 'Web2 — Backend & Infra',
+      description: 'Node.js/Express APIs, relational and document databases, application architecture end to end.',
+    },
+    web3: {
+      label: 'Web3 — Blockchain (EVM)',
+      description: 'Solidity smart contracts, Hardhat/Foundry testing, secure DApp and wallet integration.',
+    },
+  },
   projects: {
     title: "Recent Projects",
     subtitle: "A selection of my most impactful achievements, from Fullstack design to Smart Contracts.",
@@ -109,6 +125,12 @@ export const en = {
     solo: "Solo Project",
     collab: "Collaboration",
     training: "Training",
+    filters: {
+      all: 'All',
+      frontend: 'Frontend',
+      fullstack: 'Fullstack',
+      web3: 'Web3',
+    },
     projectsList: [
       {
         id: 1,

@@ -1,15 +1,17 @@
-import { Inter, Space_Grotesk } from 'next/font/google'
+import { Inter, Fraunces, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { LanguageProvider } from '@/context/LanguageContext'
+import { ThemeProvider } from '@/context/ThemeContext'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' })
+const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces', axes: ['opsz', 'SOFT', 'WONK'] })
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains-mono' })
 
 const siteUrl = 'https://mon-portfolio-two-psi.vercel.app'
-const title = 'Juste HOUEZO | Full-Stack & Blockchain Developer'
-const description = 'Portfolio of Juste HOUEZO, Full-Stack and EVM Blockchain Developer based in Benin. Next.js, React, Node.js, Solidity, Hardhat.'
+const title = 'Juste HOUEZO | Frontend, Fullstack & Web3 Developer'
+const description = 'Portfolio of Juste HOUEZO — Frontend-focused developer building across Web2 (Next.js, React, Node.js) and Web3 (Solidity, Hardhat, EVM). Based in Benin.'
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -18,7 +20,7 @@ export const metadata = {
     template: '%s | Juste HOUEZO',
   },
   description,
-  keywords: ['Juste HOUEZO', 'Full-Stack Developer', 'Blockchain Developer', 'Solidity', 'Next.js', 'React', 'Web3', 'Benin'],
+  keywords: ['Juste HOUEZO', 'Frontend Developer', 'Fullstack Developer', 'Blockchain Developer', 'Solidity', 'Next.js', 'React', 'Web3', 'Benin'],
   authors: [{ name: 'Juste HOUEZO', url: 'https://github.com/Juste130' }],
   creator: 'Juste HOUEZO',
   alternates: {
@@ -44,6 +46,16 @@ export const metadata = {
   },
 }
 
+const themeInitScript = `
+(function() {
+  try {
+    var stored = localStorage.getItem('theme');
+    var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+`
+
 export default function RootLayout({ children }) {
   const personJsonLd = {
     '@context': 'https://schema.org',
@@ -52,7 +64,7 @@ export default function RootLayout({ children }) {
     alternateName: 'Juste130',
     url: siteUrl,
     image: `${siteUrl}/profile.webp`,
-    jobTitle: 'Full-Stack & Blockchain Developer',
+    jobTitle: 'Frontend, Fullstack (Web2) & Web3 (EVM) Developer',
     description,
     address: {
       '@type': 'PostalAddress',
@@ -72,24 +84,31 @@ export default function RootLayout({ children }) {
   }
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html
+      lang="en"
+      className={`scroll-smooth ${inter.variable} ${fraunces.variable} ${jetbrainsMono.variable}`}
+      suppressHydrationWarning
+    >
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
       </head>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased min-h-screen flex flex-col`}>
-        <LanguageProvider>
-          <a href="#main-content" className="skip-link">
-            Aller au contenu principal
-          </a>
-          <Navigation />
-          <main id="main-content" className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </LanguageProvider>
+      <body className="font-sans antialiased min-h-screen flex flex-col">
+        <ThemeProvider>
+          <LanguageProvider>
+            <a href="#main-content" className="skip-link">
+              Aller au contenu principal
+            </a>
+            <Navigation />
+            <main id="main-content" className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

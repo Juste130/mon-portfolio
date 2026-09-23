@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from 'react'
 import { useLanguage } from '@/context/LanguageContext'
-import { Globe } from 'lucide-react'
+import { useTheme } from '@/context/ThemeContext'
+import { Globe, Moon, Sun } from 'lucide-react'
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { language, toggleLanguage, t } = useLanguage()
+  const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20)
@@ -32,10 +34,10 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
         isScrolled
-          ? 'bg-white/80 backdrop-blur-lg border-b border-slate-200/60 shadow-sm py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-paper/90 backdrop-blur-md border-border py-3'
+          : 'bg-transparent border-transparent py-5'
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6">
@@ -44,43 +46,59 @@ export default function Navigation() {
           <a
             href="#home"
             onClick={(e) => scrollTo(e, '#home')}
-            className="text-xl font-black tracking-tight font-[family-name:var(--font-space-grotesk)] text-slate-900"
+            className="font-display text-xl tracking-tight text-ink"
           >
-            Juste<span className="text-blue-600">Dev</span>
+            Juste Houezo<span className="text-accent">.</span>
           </a>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.path}
                 onClick={(e) => scrollTo(e, item.path)}
-                className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all"
+                className="link-underline font-mono text-xs uppercase tracking-widest text-ink-soft hover:text-ink transition-colors"
               >
                 {item.name}
               </a>
             ))}
 
-            {/* Language switcher */}
-            <button
-              onClick={toggleLanguage}
-              aria-label={language === 'en' ? 'Passer le site en français' : 'Switch site to English'}
-              className="ml-4 flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-slate-700 border border-slate-200 rounded-lg hover:border-blue-400 hover:text-blue-600 hover:bg-blue-50 transition-all"
-            >
-              <Globe size={14} />
-              {language === 'en' ? 'FR' : 'EN'}
-            </button>
+            <div className="flex items-center gap-2 ml-2">
+              <button
+                onClick={toggleTheme}
+                aria-label={theme === 'dark' ? 'Passer au thème clair' : 'Passer au thème sombre'}
+                className="theme-toggle"
+              >
+                {theme === 'dark' ? <Sun size={15} /> : <Moon size={15} />}
+              </button>
+
+              <button
+                onClick={toggleLanguage}
+                aria-label={language === 'en' ? 'Passer le site en français' : 'Switch site to English'}
+                className="theme-toggle font-mono text-[0.7rem] font-bold w-auto px-3 gap-1.5"
+              >
+                <Globe size={13} />
+                {language === 'en' ? 'FR' : 'EN'}
+              </button>
+            </div>
           </div>
 
           {/* Mobile */}
-          <div className="md:hidden flex items-center gap-3">
+          <div className="md:hidden flex items-center gap-2">
+            <button
+              onClick={toggleTheme}
+              aria-label={theme === 'dark' ? 'Passer au thème clair' : 'Passer au thème sombre'}
+              className="theme-toggle"
+            >
+              {theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />}
+            </button>
             <button
               onClick={toggleLanguage}
               aria-label={language === 'en' ? 'Passer le site en français' : 'Switch site to English'}
-              className="flex items-center gap-1 text-xs font-bold text-slate-600 border border-slate-200 rounded-lg px-2 py-1.5"
+              className="theme-toggle font-mono text-[0.65rem] font-bold w-auto px-2.5 gap-1"
             >
-              <Globe size={13} />
+              <Globe size={12} />
               {language === 'en' ? 'FR' : 'EN'}
             </button>
             <button
@@ -88,9 +106,9 @@ export default function Navigation() {
               aria-label={isMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
-              className="p-2 text-slate-700 rounded-lg hover:bg-slate-100"
+              className="theme-toggle"
             >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 {isMenuOpen
                   ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -102,14 +120,14 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div id="mobile-menu" className="md:hidden mt-3 py-3 border-t border-slate-100">
+          <div id="mobile-menu" className="md:hidden mt-3 py-3 border-t border-border">
             <div className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.path}
                   onClick={(e) => scrollTo(e, item.path)}
-                  className="px-3 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
+                  className="px-1 py-2.5 font-mono text-xs uppercase tracking-widest text-ink-soft hover:text-accent transition-colors"
                 >
                   {item.name}
                 </a>

@@ -6,7 +6,9 @@ export const projects = [
     tags: ['TypeScript', 'Hardhat', 'Polygon', 'Next.js'],
     type: 'Projet Solo',
     githubUrl: 'https://github.com/Juste130/contractify',
-    category: 'Blockchain'
+    category: 'Blockchain',
+    profiles: ['web3', 'frontend'],
+    techBreakdown: 'Frontend: Next.js UI · Contracts: Solidity, Hardhat, Polygon',
   },
   {
     id: 2,
@@ -16,7 +18,9 @@ export const projects = [
     type: 'Entrainement',
     githubUrl: 'https://github.com/Juste130/fitness-latour',
     liveUrl: 'https://fitness-latour.vercel.app',
-    category: 'Frontend'
+    category: 'Frontend',
+    profiles: ['frontend'],
+    techBreakdown: 'Frontend: React, Tailwind CSS',
   },
   {
     id: 3,
@@ -25,7 +29,9 @@ export const projects = [
     tags: ['Node.js', 'Express', 'API'],
     type: 'Projet Solo',
     githubUrl: 'https://github.com/Juste130/La_Revelation_api',
-    category: 'Backend'
+    category: 'Backend',
+    profiles: ['fullstack'],
+    techBreakdown: 'Backend: Node.js, Express, REST API',
   },
   {
     id: 4,
@@ -34,7 +40,9 @@ export const projects = [
     tags: ['JavaScript', 'Next.js', 'Hackathon'],
     type: 'Collaboration',
     githubUrl: 'https://github.com/Juste130/Hackaton_nasa_2025',
-    category: 'Fullstack'
+    category: 'Fullstack',
+    profiles: ['frontend', 'fullstack'],
+    techBreakdown: 'Frontend: Next.js UI · Backend: search engine over NASA data',
   },
   {
     id: 5,
@@ -43,7 +51,9 @@ export const projects = [
     tags: ['JavaScript', 'Next.js', 'Tailwind'],
     type: 'Projet Solo',
     githubUrl: 'https://github.com/Juste130/teido-pay',
-    category: 'Fullstack'
+    category: 'Fullstack',
+    profiles: ['frontend', 'fullstack'],
+    techBreakdown: 'Frontend: Next.js, Tailwind CSS · Backend: payment logic',
   },
   {
     id: 6,
@@ -52,7 +62,9 @@ export const projects = [
     tags: ['TypeScript', 'Next.js', 'Tailwind'],
     type: 'Projet Solo',
     githubUrl: 'https://github.com/Juste130/basket-benin-info',
-    category: 'Frontend'
+    category: 'Frontend',
+    profiles: ['frontend'],
+    techBreakdown: 'Frontend: Next.js, TypeScript, Tailwind CSS',
   },
   {
     id: 7,
@@ -61,7 +73,9 @@ export const projects = [
     tags: ['TypeScript', 'React'],
     type: 'Formation',
     githubUrl: 'https://github.com/Juste130/todo-app-cyberincub',
-    category: 'Frontend'
+    category: 'Frontend',
+    profiles: ['frontend'],
+    techBreakdown: 'Frontend: React, TypeScript · CI/CD pipeline',
   },
   {
     id: 8,
@@ -70,7 +84,9 @@ export const projects = [
     tags: ['JavaScript', 'Next.js', 'Tailwind'],
     type: 'Projet Solo',
     liveUrl: 'https://gestion-motel-larevelation.netlify.app/',
-    category: 'Fullstack'
+    category: 'Fullstack',
+    profiles: ['frontend', 'fullstack'],
+    techBreakdown: 'Frontend: Next.js dashboard · Backend: inventory & revenue tracking, PIN auth',
   },
   {
     id: 9,
@@ -80,7 +96,9 @@ export const projects = [
     type: 'Projet Solo',
     liveUrl: 'https://multi-party-escrow.vercel.app/',
     githubUrl: "https://github.com/Juste130/ICP-8C2D4268-2026-REPO/tree/main/Week3/multi-party-escrow",
-    category: 'Blockchain'
+    category: 'Blockchain',
+    profiles: ['web3', 'frontend'],
+    techBreakdown: 'Frontend: React + wallet integration · Contracts: Solidity, Foundry, Sepolia',
   },
   {
     id: 10,
@@ -90,6 +108,8 @@ export const projects = [
     type: 'Projet Solo',
     liveUrl: 'https://voting-dapp-five-delta.vercel.app/',
     githubUrl: "https://github.com/Juste130/ICP-8C2D4268-2026-REPO/tree/main/Week2/project3-voting-dApp/voting-dapp",
-    category: 'Blockchain'
+    category: 'Blockchain',
+    profiles: ['web3', 'frontend'],
+    techBreakdown: 'Frontend: React + wallet integration · Contracts: Solidity, Hardhat, Polygon',
   }
 ];

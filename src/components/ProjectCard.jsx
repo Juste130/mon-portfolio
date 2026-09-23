@@ -1,55 +1,17 @@
-import { ExternalLink, Github, Film } from 'lucide-react'
+import { ExternalLink, Github, Film, LayoutGrid, Server, Blocks, Layers } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
 const categoryConfig = {
-  'Blockchain': {
-    label: 'Blockchain',
-    icon: '⛓️',
-    bg: 'bg-violet-50',
-    text: 'text-violet-700',
-    border: 'border-violet-200',
-    dot: 'bg-violet-500',
-  },
-  'Frontend': {
-    label: 'Frontend',
-    icon: '🎨',
-    bg: 'bg-cyan-50',
-    text: 'text-cyan-700',
-    border: 'border-cyan-200',
-    dot: 'bg-cyan-500',
-  },
-  'Backend': {
-    label: 'Backend',
-    icon: '⚙️',
-    bg: 'bg-emerald-50',
-    text: 'text-emerald-700',
-    border: 'border-emerald-200',
-    dot: 'bg-emerald-500',
-  },
-  'Fullstack': {
-    label: 'Fullstack',
-    icon: '🚀',
-    bg: 'bg-blue-50',
-    text: 'text-blue-700',
-    border: 'border-blue-200',
-    dot: 'bg-blue-500',
-  },
-  'DEFI': {
-    label: 'DeFi',
-    icon: '💰',
-    bg: 'bg-pink-50',
-    text: 'text-pink-700',
-    border: 'border-pink-200',
-    dot: 'bg-pink-500',
-  },
+  Blockchain: { label: 'Blockchain', Icon: Blocks },
+  Frontend: { label: 'Frontend', Icon: LayoutGrid },
+  Backend: { label: 'Backend', Icon: Server },
+  Fullstack: { label: 'Fullstack', Icon: Layers },
 }
 
 export default function ProjectCard({ project }) {
   const { t } = useLanguage()
-  const cfg = categoryConfig[project.category] || {
-    label: project.category, icon: '📦',
-    bg: 'bg-slate-50', text: 'text-slate-700', border: 'border-slate-200', dot: 'bg-slate-400'
-  }
+  const cfg = categoryConfig[project.category] || { label: project.category, Icon: Layers }
+  const { Icon } = cfg
 
   // Get translated project data
   const translatedProject = t.projects.projectsList?.find(p => p.id === project.id)
@@ -71,47 +33,47 @@ export default function ProjectCard({ project }) {
     <div className="project-card">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
-        <span className={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold rounded-full border ${cfg.bg} ${cfg.text} ${cfg.border}`}>
-          <span>{cfg.icon}</span>
+        <span className="chip">
+          <Icon size={12} />
           {cfg.label}
         </span>
-        <span className="text-xs text-slate-500 font-medium">
+        <span className="font-mono text-[0.65rem] uppercase tracking-widest text-muted">
           {displayType}
         </span>
       </div>
 
       {/* Title */}
-      <h3 className="text-xl font-bold text-slate-900 font-[family-name:var(--font-space-grotesk)] mb-2 group-hover:text-blue-600 transition-colors">
+      <h3 className="font-display text-xl text-ink mb-2">
         {displayTitle}
       </h3>
 
       {/* Description */}
-      <p className="text-sm text-slate-500 leading-relaxed mb-5 flex-grow">
+      <p className="text-sm text-ink-soft leading-relaxed mb-4 flex-grow">
         {displayDescription}
       </p>
 
+      {/* Tech breakdown — montre explicitement la part frontend, même sur les projets Web3 */}
+      {project.techBreakdown && (
+        <p className="font-mono text-[0.7rem] text-muted leading-relaxed mb-4">
+          {project.techBreakdown}
+        </p>
+      )}
+
       {/* Tags */}
-      <div className="flex flex-wrap gap-1.5 mb-5">
-        {project.tags.map((tag) => (
-          <span
-            key={tag}
-            className="px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-600 rounded-full"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
+      <p className="font-mono text-[0.65rem] uppercase tracking-wide text-muted mb-5">
+        {project.tags.join(' · ')}
+      </p>
 
       {/* Links */}
-      <div className="flex gap-3 mt-auto pt-4 border-t border-slate-100">
+      <div className="flex gap-4 mt-auto pt-4 border-t border-border">
         {project.liveUrl && (
           <a
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
+            className="link-underline flex items-center gap-1.5 font-mono text-xs uppercase tracking-wide text-ink hover:text-accent transition-colors"
           >
-            <ExternalLink size={14} />
+            <ExternalLink size={13} />
             {t.projects.live}
           </a>
         )}
@@ -120,9 +82,9 @@ export default function ProjectCard({ project }) {
             href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm font-semibold text-pink-600 hover:text-pink-800 transition-colors"
+            className="link-underline flex items-center gap-1.5 font-mono text-xs uppercase tracking-wide text-ink hover:text-accent transition-colors"
           >
-            <Film size={14} />
+            <Film size={13} />
             Demo
           </a>
         )}
@@ -131,9 +93,9 @@ export default function ProjectCard({ project }) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors ml-auto"
+            className="link-underline flex items-center gap-1.5 font-mono text-xs uppercase tracking-wide text-ink-soft hover:text-accent transition-colors ml-auto"
           >
-            <Github size={14} />
+            <Github size={13} />
             {t.projects.source}
           </a>
         )}

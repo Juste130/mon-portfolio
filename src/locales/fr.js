@@ -2,18 +2,19 @@ export const fr = {
   nav: {
     home: 'Accueil',
     journey: 'Parcours',
-    skills: 'Compétences',
+    skills: 'Ce que je fais',
     projects: 'Projets',
     contact: 'Contact',
   },
   hero: {
     greeting: "Bonjour, je suis",
-    available: 'Disponible pour de nouveaux projets',
-    subtitle: "Je construis des expériences digitales solides.",
-    fullstack: "Développeur Full-Stack",
-    fullstackDesc: "Orienté Frontend. Je crée des interfaces utilisateur ultra-réactives, fluides et accessibles, propulsées par des architectures Backend robustes (Next.js, Node.js, Laravel).",
-    blockchain: "Développeur Blockchain (EVM)",
-    blockchainDesc: "Spécialisé dans l'écosystème EVM (Polygon, Ethereum). Je conçois des Smart Contracts sécurisés (Solidity) et des DApps innovantes.",
+    available: 'Disponible pour de nouveaux projets — ouvert au remote',
+    roleFrontend: 'Développeur Frontend',
+    roleFullstack: 'Fullstack (Web2)',
+    roleWeb3: 'Web3 Engineer',
+    subtitleLead: "Je conçois des interfaces soignées, rapides et accessibles.",
+    subtitleWeb2: "Je livre des produits Web2 fullstack de bout en bout.",
+    subtitleWeb3: "Je conçois, teste et sécurise des smart contracts sur l'écosystème EVM.",
     viewProjects: "Voir mes projets",
     contactMe: "Me contacter"
   },
@@ -99,6 +100,23 @@ export const fr = {
     expertise: "Expertises Techniques",
     environment: "Outils & Environnement"
   },
+  capabilities: {
+    eyebrow: 'Ce que je fais',
+    title: 'Frontend en tête, Web2 et Web3 en profondeur',
+    subtitle: "Une expertise frontend assumée, appuyée par une architecture Web2 solide et une vraie maîtrise Web3/EVM.",
+    frontend: {
+      label: 'Frontend',
+      description: 'Interfaces React & Next.js, design systems, animation, accessibilité et performance traitées comme des priorités.',
+    },
+    web2: {
+      label: 'Web2 — Backend & Infra',
+      description: 'APIs Node.js/Express, bases de données relationnelles et documentaires, architecture applicative de bout en bout.',
+    },
+    web3: {
+      label: 'Web3 — Blockchain (EVM)',
+      description: 'Smart contracts Solidity, tests Hardhat/Foundry, intégration DApp et wallet sécurisée.',
+    },
+  },
   projects: {
     title: "Projets Récents",
     subtitle: "Une sélection de mes réalisations les plus impactantes, de la conception Fullstack aux Smart Contracts.",
@@ -107,6 +125,12 @@ export const fr = {
     solo: "Projet Solo",
     collab: "Collaboration",
     training: "Formation",
+    filters: {
+      all: 'Tout',
+      frontend: 'Frontend',
+      fullstack: 'Fullstack',
+      web3: 'Web3',
+    },
     projectsList: [
       {
         id: 1,
