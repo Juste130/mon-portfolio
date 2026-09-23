@@ -13,7 +13,7 @@ export function OgImageContent() {
         flexDirection: 'column',
         justifyContent: 'center',
         padding: '80px',
-        background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #312e81 100%)',
+        background: '#131110',
         fontFamily: 'sans-serif',
       }}
     >
@@ -30,37 +30,39 @@ export function OgImageContent() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: 14,
-            height: 14,
+            width: 10,
+            height: 10,
             borderRadius: 999,
-            background: '#34d399',
+            background: '#e37a48',
           }}
         />
-        <div style={{ display: 'flex', color: '#34d399', fontSize: 26, fontWeight: 600, letterSpacing: 1 }}>
-          AVAILABLE FOR NEW PROJECTS
+        <div style={{ display: 'flex', color: '#857e6e', fontSize: 24, fontWeight: 600, letterSpacing: 3, textTransform: 'uppercase' }}>
+          Available for new projects
         </div>
       </div>
 
-      <div style={{ display: 'flex', color: '#ffffff', fontSize: 78, fontWeight: 800, lineHeight: 1.05 }}>
-        Juste HOUEZO
+      <div style={{ display: 'flex', color: '#f3eee3', fontSize: 84, fontWeight: 700, lineHeight: 1.05 }}>
+        Juste Houezo.
       </div>
 
-      <div style={{ display: 'flex', color: '#93c5fd', fontSize: 40, fontWeight: 700, marginTop: 18 }}>
-        Full-Stack &amp; Blockchain Developer
+      <div style={{ display: 'flex', gap: 14, marginTop: 32, fontSize: 30, fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase' }}>
+        <span style={{ display: 'flex', color: '#f3eee3' }}>Frontend Developer</span>
+        <span style={{ display: 'flex', color: '#857e6e' }}>—</span>
+        <span style={{ display: 'flex', color: '#c7c0b0' }}>Fullstack (Web2)</span>
+        <span style={{ display: 'flex', color: '#857e6e' }}>—</span>
+        <span style={{ display: 'flex', color: '#c7c0b0' }}>Web3 Engineer</span>
       </div>
 
-      <div style={{ display: 'flex', gap: 16, marginTop: 44 }}>
+      <div style={{ display: 'flex', gap: 12, marginTop: 48 }}>
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            padding: '12px 28px',
-            borderRadius: 999,
-            background: 'rgba(6, 182, 212, 0.15)',
-            border: '2px solid rgba(6, 182, 212, 0.4)',
-            color: '#67e8f9',
-            fontSize: 28,
-            fontWeight: 600,
+            padding: '10px 24px',
+            border: '1px solid #2b2723',
+            color: '#c7c0b0',
+            fontSize: 24,
+            fontWeight: 500,
           }}
         >
           React · Next.js · Node.js
@@ -69,13 +71,11 @@ export function OgImageContent() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            padding: '12px 28px',
-            borderRadius: 999,
-            background: 'rgba(139, 92, 246, 0.15)',
-            border: '2px solid rgba(139, 92, 246, 0.4)',
-            color: '#c4b5fd',
-            fontSize: 28,
-            fontWeight: 600,
+            padding: '10px 24px',
+            border: '1px solid #e37a48',
+            color: '#e37a48',
+            fontSize: 24,
+            fontWeight: 500,
           }}
         >
           Solidity · Hardhat

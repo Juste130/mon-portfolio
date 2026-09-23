@@ -19,7 +19,7 @@ export default function ToolIcon({ name, icon, color, image }) {
             className="rounded"
           />
         </div>
-        <span className="text-xs font-semibold text-center text-slate-600 group-hover:text-slate-900 transition-colors leading-tight">
+        <span className="font-mono text-[0.65rem] uppercase tracking-wide text-center text-ink-soft group-hover:text-ink transition-colors leading-tight">
           {name}
         </span>
       </div>
@@ -32,7 +32,7 @@ export default function ToolIcon({ name, icon, color, image }) {
       <div className="flex items-center justify-center w-10 h-10">
         {icon}
       </div>
-      <span className="text-xs font-semibold text-center text-slate-600 group-hover:text-slate-900 transition-colors leading-tight">
+      <span className="font-mono text-[0.65rem] uppercase tracking-wide text-center text-ink-soft group-hover:text-ink transition-colors leading-tight">
         {name}
       </span>
     </div>
