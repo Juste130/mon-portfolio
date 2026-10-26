@@ -170,11 +170,6 @@ export const en = {
         description: 'Non-responsive website for a fictional fitness gym to practice my skills.',
       },
       {
-        id: 3,
-        title: 'La Révélation API',
-        description: 'Backend for a booking platform for the La Révélation hotel complex.',
-      },
-      {
         id: 4,
         title: 'Hackathon NASA 2025',
         description: 'Apollo project created for the NASA Hackathon 2025, an intelligent search engine based on NASA articles.',
@@ -192,7 +187,7 @@ export const en = {
       {
         id: 8,
         title: 'La Révélation - Motel Management',
-        description: 'Management web app for the La Révélation hotel complex. Digitizes the paper register: stock/beverage tracking, weekly revenue, PIN-protected access for management.',
+        description: 'Full-stack Next.js management app for the La Révélation motel, in production. Digitizes the paper register: room stays, sales and stock (negative stock blocked), payments and cash, daily closing report, email OTP/Google authentication and audit log.',
       },
       {
         id: 9,

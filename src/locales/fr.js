@@ -170,11 +170,6 @@ export const fr = {
         description: 'Site web non responsive pour une salle de sport et de fitness fictive pour m\'entrainer.',
       },
       {
-        id: 3,
-        title: 'La Révélation API',
-        description: 'Backend pour une plateforme de réservation du complexe hôtelier La Révélation.',
-      },
-      {
         id: 4,
         title: 'Hackaton NASA 2025',
         description: 'Projet Apollon réalisé dans le cadre du Hackaton NASA 2025 qui est un moteur de recherche sur la base des articles de la NASA.',
@@ -192,7 +187,7 @@ export const fr = {
       {
         id: 8,
         title: 'La Révélation - Gestion Motel',
-        description: 'Application web de gestion pour le complexe hôtelier La Révélation. Digitalise le registre papier : suivi des stocks/boissons, chiffre d\'affaires hebdomadaire, accès sécurisé par code PIN pour la direction.',
+        description: 'Application Next.js fullstack de gestion du motel La Révélation, en production. Digitalise le registre papier : séjours par chambre, ventes et stocks (blocage du stock négatif), paiements et caisse, bilan journalier, authentification OTP email/Google et journal d\'audit.',
       },
       {
         id: 9,
