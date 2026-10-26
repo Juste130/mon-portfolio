@@ -4,6 +4,7 @@ export const en = {
     journey: 'Journey',
     skills: 'What I do',
     projects: 'Projects',
+    openSource: 'Open Source',
     contact: 'Contact',
   },
   hero: {
@@ -23,10 +24,17 @@ export const en = {
     subtitle: "My professional evolution and training, shaping my dual expertise today.",
     experiences: [
       {
+        id: 11,
+        year: 'Oct 2026',
+        title: 'IEEE ClimateChain 2026 — BlueRoot',
+        description: 'Designed and shipped BlueRoot (track: Carbon markets and emissions transparency): an on-chain proof registry for community mangrove restoration in Benin, deployed on Polygon Amoy.',
+        role: 'Fullstack & Blockchain Developer',
+      },
+      {
         id: 10,
         year: 'June 2026 - Present',
         title: 'Web2 Developer Internship (Banca Engineering Bénin)',
-        description: 'On-site professional internship at Banca Engineering Bénin. Web2 development on numerous projects for the Building & Public Works sector.',
+        description: 'On-site professional internship at Banca Engineering Bénin. Web2 development on numerous projects for the Building & Public Works sector, working as a team on GitLab.',
         role: 'Fullstack Developer',
       },
       {
@@ -40,7 +48,7 @@ export const en = {
         id: 1,
         year: 'May 2026',
         title: 'Web3 & Smart Contracts Specialization',
-        description: 'Certifications on Updraft Cyfrin: Solidity Smart Contracts development, blockchain fundamentals, and Web3 wallet security.',
+        description: 'After a blockchain introduction on CryptoZombies, certifications on Updraft Cyfrin: Solidity Smart Contracts development, blockchain fundamentals, and Web3 wallet security.',
         role: 'Training & Incubation',
       },
       {
@@ -67,8 +75,8 @@ export const en = {
       {
         id: 5,
         year: 'Oct 2025 - Present',
-        title: 'Web3 Thesis Project (CryptoZombies)',
-        description: 'Created a DApp for traditional contract management via NFTs. Smart contract developed and deployed on Testnet, finishing Frontend/Backend integration.',
+        title: 'Web3 Thesis Project — Cachetify',
+        description: 'Built Cachetify (formerly Contractify), a contract management platform: AI-assisted drafting, multi-party signing and proof anchored on Polygon. Full-stack app and smart contract deployed.',
         role: 'Blockchain Developer',
       },
       {
@@ -134,8 +142,13 @@ export const en = {
     projectsList: [
       {
         id: 1,
-        title: 'Contractify',
-        description: 'Smart contract management platform based on NFTs and Polygon Blockchain. Handles contract creation, signing, and clause enforcement.',
+        title: 'Cachetify',
+        description: 'Contract management platform (formerly Contractify): AI-assisted drafting, multi-party signing on Polygon and a publicly verifiable certificate via QR code. Only the document fingerprint is anchored on-chain.',
+      },
+      {
+        id: 11,
+        title: 'BlueRoot',
+        description: 'Open-source proof registry for community blue carbon (Benin mangroves). H3-cell zones, Sentinel-2 NDVI, advisory AI report, two-validator human approval and ERC-1155 credits with a contract-enforced community share.',
       },
       {
         id: 2,
@@ -183,6 +196,21 @@ export const en = {
         description: 'Decentralized voting DApp built on smart contracts, ensuring transparency and immutability of ballot results.',
       }
     ]
+  },
+  openSource: {
+    title: "Open Source Contributions",
+    subtitle: "Fixes contributed to Web3 repositories maintained by other teams: reading the code, reproducing the bug, fixing it and opening a pull request.",
+    merged: 'Merged',
+    open: 'In review',
+    viewPr: 'View PR',
+    allPrs: 'All my pull requests',
+    gitlabNote: "I also use GitLab daily at work, on private repositories.",
+    items: {
+      'aratea-262': "Found and fixed a bug in PolicyRegistry: a threshold above 32767 overflowed int16 and always triggered the payout. Opened issue #261, then shipped the fix.",
+      'zeus-9': "Fixed the BOT Chain (677) escrow address in the SDK and frontend so they point to the contract actually deployed.",
+      'zeus-17': "The frontend now reports an escrow deposit as successful only after a successful transaction receipt, not on submission.",
+      'defi-1639': "Restored get_supported_gmx_chains(), broken by the GMX API endpoint refactor, in Trading Strategy's Python DeFi library.",
+    },
   },
   contact: {
     title: "Ready to collaborate?",

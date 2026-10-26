@@ -4,6 +4,7 @@ export const fr = {
     journey: 'Parcours',
     skills: 'Ce que je fais',
     projects: 'Projets',
+    openSource: 'Open Source',
     contact: 'Contact',
   },
   hero: {
@@ -23,10 +24,17 @@ export const fr = {
     subtitle: "Mon évolution professionnelle et mes formations, façonnant ma double expertise d'aujourd'hui.",
     experiences: [
       {
+        id: 11,
+        year: 'Oct 2026',
+        title: 'IEEE ClimateChain 2026 — BlueRoot',
+        description: 'Conception et livraison de BlueRoot (piste « Marchés carbone et transparence des émissions ») : registre de preuves on-chain pour la restauration communautaire des mangroves au Bénin, déployé sur Polygon Amoy.',
+        role: 'Développeur Fullstack & Blockchain',
+      },
+      {
         id: 10,
         year: 'Juin 2026 - Présent',
         title: 'Stage Développeur Web2 (Banca Engineering Bénin)',
-        description: 'Stage professionnel en présentiel chez Banca Engineering Bénin. Développement Web2 sur plusieurs projets dans le secteur du Bâtiment et des Travaux Publics.',
+        description: 'Stage professionnel en présentiel chez Banca Engineering Bénin. Développement Web2 sur plusieurs projets dans le secteur du Bâtiment et des Travaux Publics, en équipe sur GitLab.',
         role: 'Développeur Fullstack',
       },
       {
@@ -40,7 +48,7 @@ export const fr = {
         id: 1,
         year: 'Mai 2026',
         title: 'Spécialisation Web3 & Smart Contracts',
-        description: 'Certifications sur Updraft Cyfrin : développement de Smart Contracts Solidity, principes fondamentaux de la blockchain et sécurité des portefeuilles Web3.',
+        description: 'Après une initiation à la blockchain sur CryptoZombies, certifications sur Updraft Cyfrin : développement de Smart Contracts Solidity, principes fondamentaux de la blockchain et sécurité des portefeuilles Web3.',
         role: 'Formation & Incubation',
       },
       {
@@ -67,8 +75,8 @@ export const fr = {
       {
         id: 5,
         year: 'Oct 2025 - Présent',
-        title: 'Projet de Mémoire Web3 (CryptoZombies)',
-        description: 'Création d\'une DApp pour la gestion de contrats traditionnels via NFT. Smart contract développé et déployé sur Testnet, intégration Frontend/Backend en finalisation.',
+        title: 'Projet de Mémoire Web3 — Cachetify',
+        description: 'Création de Cachetify (anciennement Contractify), plateforme de gestion de contrats : rédaction assistée par IA, signature multi-parties et preuve ancrée sur Polygon. Application fullstack et smart contract déployés.',
         role: 'Développeur Blockchain',
       },
       {
@@ -134,8 +142,13 @@ export const fr = {
     projectsList: [
       {
         id: 1,
-        title: 'Contractify',
-        description: 'Plateforme de gestion de contrats basée sur les NFTs et la Blockchain Polygon. Gère la création, la signature et le respect des clauses.',
+        title: 'Cachetify',
+        description: 'Plateforme de gestion de contrats (anciennement Contractify) : rédaction assistée par IA, signature multi-parties sur Polygon et certificat vérifiable publiquement via QR code. Seule l\'empreinte du document est ancrée on-chain.',
+      },
+      {
+        id: 11,
+        title: 'BlueRoot',
+        description: 'Registre de preuves open source pour le carbone bleu communautaire (mangroves du Bénin). Zones en cellules H3, NDVI Sentinel-2, rapport IA consultatif, double validation humaine et crédits ERC-1155 avec part communautaire garantie par contrat.',
       },
       {
         id: 2,
@@ -183,6 +196,21 @@ export const fr = {
         description: 'DApp de vote décentralisé basée sur des smart contracts, garantissant la transparence et l\'immuabilité des résultats du scrutin.',
       }
     ]
+  },
+  openSource: {
+    title: "Contributions Open Source",
+    subtitle: "Des correctifs proposés sur des dépôts Web3 maintenus par d'autres équipes : lecture du code, reproduction du bug, correction et pull request.",
+    merged: 'Mergée',
+    open: 'En revue',
+    viewPr: 'Voir la PR',
+    allPrs: 'Toutes mes pull requests',
+    gitlabNote: "J'utilise aussi GitLab au quotidien en entreprise, sur des dépôts privés.",
+    items: {
+      'aratea-262': "Bug trouvé et corrigé dans PolicyRegistry : un seuil supérieur à 32767 débordait en int16 et déclenchait systématiquement l'indemnisation. Issue #261 ouverte puis corrigée.",
+      'zeus-9': "Correction de l'adresse du contrat d'escrow sur BOT Chain (677) dans le SDK et le frontend, pour pointer vers le contrat réellement déployé.",
+      'zeus-17': "Le frontend n'affiche le succès d'un dépôt en escrow qu'après un reçu de transaction réussi, et non plus dès l'envoi.",
+      'defi-1639': "Restauration de get_supported_gmx_chains(), cassée par la refonte des endpoints de l'API GMX, dans une librairie Python DeFi de Trading Strategy.",
+    },
   },
   contact: {
     title: "Prêt à collaborer ?",
