@@ -31,10 +31,17 @@ export const fr = {
         role: 'Développeur Fullstack & Blockchain',
       },
       {
+        id: 12,
+        year: 'Sept 2026 - Présent',
+        title: 'Développeur Prestataire (Banca Engineering Bénin)',
+        description: 'Suite à mon stage, je poursuis ma collaboration avec Banca Engineering Bénin en tant que prestataire. Développement Web2 sur des projets du secteur du Bâtiment et des Travaux Publics, en équipe sur GitLab.',
+        role: 'Développeur Fullstack',
+      },
+      {
         id: 10,
-        year: 'Juin 2026 - Présent',
+        year: 'Juin 2026 - Sept 2026',
         title: 'Stage Développeur Web2 (Banca Engineering Bénin)',
-        description: 'Stage professionnel en présentiel chez Banca Engineering Bénin. Développement Web2 sur plusieurs projets dans le secteur du Bâtiment et des Travaux Publics, en équipe sur GitLab.',
+        description: 'Stage professionnel en présentiel chez Banca Engineering Bénin. Développement Web2 sur plusieurs projets dans le secteur du Bâtiment et des Travaux Publics.',
         role: 'Développeur Fullstack',
       },
       {
@@ -45,18 +52,11 @@ export const fr = {
         role: 'Développeur Blockchain',
       },
       {
-        id: 1,
-        year: 'Mai 2026',
-        title: 'Spécialisation Web3 & Smart Contracts',
-        description: 'Après une initiation à la blockchain sur CryptoZombies, certifications sur Updraft Cyfrin : développement de Smart Contracts Solidity, principes fondamentaux de la blockchain et sécurité des portefeuilles Web3.',
-        role: 'Formation & Incubation',
-      },
-      {
         id: 2,
         year: 'Nov 2025 - Mai 2026',
-        title: 'Développeur & DevSecOps (CyberIncub)',
-        description: 'Incubation de 6 mois (ASIN, ADPME, LuxDev). Formations en Cybersécurité, DevSecOps, et Architecture. Développement du système "Gnonvi" (Go, Electron, React) pour le pilotage de la conformité PSSIE au Bénin.',
-        role: 'Développeur Fullstack',
+        title: 'Lead Technique & DevSecOps (CyberIncub)',
+        description: 'Incubation de 6 mois (ASIN, ADPME, LuxDev). Lead technique, développeur et DevSecOps du projet "Gnonvi" (Go, Electron, React), système de pilotage de la conformité PSSIE au Bénin. Montée en compétences techniques (cybersécurité, DevSecOps, architecture) et business (développement commercial).',
+        role: 'Lead Technique · Développeur · DevSecOps',
       },
       {
         id: 3,
@@ -64,6 +64,13 @@ export const fr = {
         title: 'Développeur Full-Stack Freelance',
         description: 'Conception et déploiement de la marketplace "biggigui" en freelance.',
         role: 'Indépendant',
+      },
+      {
+        id: 1,
+        year: 'Oct 2025 - Présent',
+        title: 'Smart Contracts & Sécurité Web3 (Cyfrin Updraft)',
+        description: 'Parcours de certifications sur Cyfrin Updraft, dont une grande partie est déjà terminée : développement de Smart Contracts Solidity, principes fondamentaux de la blockchain et sécurité des portefeuilles Web3.',
+        role: 'Formation',
       },
       {
         id: 4,
@@ -78,6 +85,13 @@ export const fr = {
         title: 'Projet de Mémoire Web3 — Cachetify',
         description: 'Création de Cachetify (anciennement Contractify), plateforme de gestion de contrats : rédaction assistée par IA, signature multi-parties et preuve ancrée sur Polygon. Application fullstack et smart contract déployés.',
         role: 'Développeur Blockchain',
+      },
+      {
+        id: 13,
+        year: 'Mai 2025',
+        title: 'Initiation Blockchain & Solidity (CryptoZombies)',
+        description: 'Premiers pas dans le Web3 sur CryptoZombies : bases de la blockchain et fondamentaux du langage Solidity.',
+        role: 'Formation',
       },
       {
         id: 6,
@@ -164,11 +178,6 @@ export const fr = {
         id: 4,
         title: 'Hackaton NASA 2025',
         description: 'Projet Apollon réalisé dans le cadre du Hackaton NASA 2025 qui est un moteur de recherche sur la base des articles de la NASA.',
-      },
-      {
-        id: 5,
-        title: 'Teido Pay',
-        description: 'Solution de paiement innovante. Projet d\'entrainement pour renforcer mes compétences.',
       },
       {
         id: 6,

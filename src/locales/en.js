@@ -31,10 +31,17 @@ export const en = {
         role: 'Fullstack & Blockchain Developer',
       },
       {
+        id: 12,
+        year: 'Sept 2026 - Present',
+        title: 'Contract Developer (Banca Engineering Bénin)',
+        description: 'Following my internship, I continue working with Banca Engineering Bénin as a contractor. Web2 development on projects for the Building & Public Works sector, working as a team on GitLab.',
+        role: 'Fullstack Developer',
+      },
+      {
         id: 10,
-        year: 'June 2026 - Present',
+        year: 'June 2026 - Sept 2026',
         title: 'Web2 Developer Internship (Banca Engineering Bénin)',
-        description: 'On-site professional internship at Banca Engineering Bénin. Web2 development on numerous projects for the Building & Public Works sector, working as a team on GitLab.',
+        description: 'On-site professional internship at Banca Engineering Bénin. Web2 development on numerous projects for the Building & Public Works sector.',
         role: 'Fullstack Developer',
       },
       {
@@ -45,18 +52,11 @@ export const en = {
         role: 'Blockchain Developer',
       },
       {
-        id: 1,
-        year: 'May 2026',
-        title: 'Web3 & Smart Contracts Specialization',
-        description: 'After a blockchain introduction on CryptoZombies, certifications on Updraft Cyfrin: Solidity Smart Contracts development, blockchain fundamentals, and Web3 wallet security.',
-        role: 'Training & Incubation',
-      },
-      {
         id: 2,
         year: 'Nov 2025 - May 2026',
-        title: 'Developer & DevSecOps (CyberIncub)',
-        description: '6-month incubation (ASIN, ADPME, LuxDev). Training in Cybersecurity, DevSecOps, and Architecture. Built "Gnonvi" (Go, Electron, React) for PSSIE compliance management in Benin.',
-        role: 'Fullstack Developer',
+        title: 'Tech Lead & DevSecOps (CyberIncub)',
+        description: '6-month incubation (ASIN, ADPME, LuxDev). Tech lead, developer and DevSecOps on the "Gnonvi" project (Go, Electron, React), a PSSIE compliance management system in Benin. Grew both technical skills (cybersecurity, DevSecOps, architecture) and business skills (business development).',
+        role: 'Tech Lead · Developer · DevSecOps',
       },
       {
         id: 3,
@@ -64,6 +64,13 @@ export const en = {
         title: 'Freelance Full-Stack Developer',
         description: 'Design and deployment of the "biggigui" marketplace as a freelancer.',
         role: 'Freelancer',
+      },
+      {
+        id: 1,
+        year: 'Oct 2025 - Present',
+        title: 'Smart Contracts & Web3 Security (Cyfrin Updraft)',
+        description: 'Certification track on Cyfrin Updraft, much of it already completed: Solidity Smart Contracts development, blockchain fundamentals, and Web3 wallet security.',
+        role: 'Training',
       },
       {
         id: 4,
@@ -78,6 +85,13 @@ export const en = {
         title: 'Web3 Thesis Project — Cachetify',
         description: 'Built Cachetify (formerly Contractify), a contract management platform: AI-assisted drafting, multi-party signing and proof anchored on Polygon. Full-stack app and smart contract deployed.',
         role: 'Blockchain Developer',
+      },
+      {
+        id: 13,
+        year: 'May 2025',
+        title: 'Blockchain & Solidity Foundations (CryptoZombies)',
+        description: 'First steps into Web3 on CryptoZombies: blockchain basics and the fundamentals of the Solidity language.',
+        role: 'Training',
       },
       {
         id: 6,
@@ -164,11 +178,6 @@ export const en = {
         id: 4,
         title: 'Hackathon NASA 2025',
         description: 'Apollo project created for the NASA Hackathon 2025, an intelligent search engine based on NASA articles.',
-      },
-      {
-        id: 5,
-        title: 'Teido Pay',
-        description: 'Innovative payment solution. Training project to strengthen my skills.',
       },
       {
         id: 6,

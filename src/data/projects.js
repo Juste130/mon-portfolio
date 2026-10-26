@@ -59,17 +59,6 @@ export const projects = [
     techBreakdown: 'Frontend: Next.js UI · Backend: search engine over NASA data',
   },
   {
-    id: 5,
-    title: 'Teido Pay',
-    description: 'Solution de paiement innovante. Projet d\'entrainement pour renforcer mes compétences.',
-    tags: ['JavaScript', 'Next.js', 'Tailwind'],
-    type: 'Projet Solo',
-    githubUrl: 'https://github.com/Juste130/teido-pay',
-    category: 'Fullstack',
-    profiles: ['frontend', 'fullstack'],
-    techBreakdown: 'Frontend: Next.js, Tailwind CSS · Backend: payment logic',
-  },
-  {
     id: 6,
     title: 'Basket Benin Info',
     description: 'Plateforme d\'information sur le basketball au Bénin. Projet d\'entrainement pour renforcer mes compétences.',
