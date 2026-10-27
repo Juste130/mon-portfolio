@@ -42,7 +42,7 @@ export const metadata = {
     card: 'summary_large_image',
     title,
     description,
-    creator: '@Juste130',
+    creator: '@houezojuste13',
   },
 }
 
@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
     sameAs: [
       'https://github.com/Juste130',
       'https://www.linkedin.com/in/juste-houezo/',
-      'https://twitter.com/Juste130',
+      'https://x.com/houezojuste13',
     ],
   }
 

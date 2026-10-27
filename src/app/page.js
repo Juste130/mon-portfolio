@@ -9,6 +9,7 @@ import HeroSection from '@/components/sections/HeroSection'
 import JourneySection from '@/components/sections/JourneySection'
 import SkillsSection from '@/components/sections/SkillsSection'
 import ProjectsSection from '@/components/sections/ProjectsSection'
+import OpenSourceSection from '@/components/sections/OpenSourceSection'
 import ContactSection from '@/components/sections/ContactSection'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <JourneySection />
       <SkillsSection />
       <ProjectsSection />
+      <OpenSourceSection />
       <ContactSection />
     </div>
   )

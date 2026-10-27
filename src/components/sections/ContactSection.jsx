@@ -18,7 +18,7 @@ export default function ContactSection() {
           variants={stagger}
         >
           <motion.div variants={fadeInUp} className="eyebrow justify-center mb-6">
-            <span className="eyebrow-number">04</span>
+            <span className="eyebrow-number">05</span>
             {t.nav.contact}
           </motion.div>
 

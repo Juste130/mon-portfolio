@@ -22,6 +22,7 @@ export default function Navigation() {
     { name: t.nav.journey,  path: '#parcours' },
     { name: t.nav.skills,   path: '#competences' },
     { name: t.nav.projects, path: '#projets' },
+    { name: t.nav.openSource, path: '#open-source' },
     { name: t.nav.contact,  path: '#contact' },
   ]
 

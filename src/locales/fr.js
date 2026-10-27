@@ -4,6 +4,7 @@ export const fr = {
     journey: 'Parcours',
     skills: 'Ce que je fais',
     projects: 'Projets',
+    openSource: 'Open Source',
     contact: 'Contact',
   },
   hero: {
@@ -23,8 +24,22 @@ export const fr = {
     subtitle: "Mon évolution professionnelle et mes formations, façonnant ma double expertise d'aujourd'hui.",
     experiences: [
       {
+        id: 11,
+        year: 'Oct 2026',
+        title: 'IEEE ClimateChain 2026 — BlueRoot',
+        description: 'Conception et livraison de BlueRoot (piste « Marchés carbone et transparence des émissions ») : registre de preuves on-chain pour la restauration communautaire des mangroves au Bénin, déployé sur Polygon Amoy.',
+        role: 'Développeur Fullstack & Blockchain',
+      },
+      {
+        id: 12,
+        year: 'Sept 2026 - Présent',
+        title: 'Développeur Prestataire (Banca Engineering Bénin)',
+        description: 'Suite à mon stage, je poursuis ma collaboration avec Banca Engineering Bénin en tant que prestataire. Développement Web2 sur des projets du secteur du Bâtiment et des Travaux Publics, en équipe sur GitLab.',
+        role: 'Développeur Fullstack',
+      },
+      {
         id: 10,
-        year: 'Juin 2026 - Présent',
+        year: 'Juin 2026 - Sept 2026',
         title: 'Stage Développeur Web2 (Banca Engineering Bénin)',
         description: 'Stage professionnel en présentiel chez Banca Engineering Bénin. Développement Web2 sur plusieurs projets dans le secteur du Bâtiment et des Travaux Publics.',
         role: 'Développeur Fullstack',
@@ -37,18 +52,11 @@ export const fr = {
         role: 'Développeur Blockchain',
       },
       {
-        id: 1,
-        year: 'Mai 2026',
-        title: 'Spécialisation Web3 & Smart Contracts',
-        description: 'Certifications sur Updraft Cyfrin : développement de Smart Contracts Solidity, principes fondamentaux de la blockchain et sécurité des portefeuilles Web3.',
-        role: 'Formation & Incubation',
-      },
-      {
         id: 2,
         year: 'Nov 2025 - Mai 2026',
-        title: 'Développeur & DevSecOps (CyberIncub)',
-        description: 'Incubation de 6 mois (ASIN, ADPME, LuxDev). Formations en Cybersécurité, DevSecOps, et Architecture. Développement du système "Gnonvi" (Go, Electron, React) pour le pilotage de la conformité PSSIE au Bénin.',
-        role: 'Développeur Fullstack',
+        title: 'Lead Technique & DevSecOps (CyberIncub)',
+        description: 'Incubation de 6 mois (ASIN, ADPME, LuxDev). Lead technique, développeur et DevSecOps du projet "Gnonvi" (Go, Electron, React), système de pilotage de la conformité PSSIE au Bénin. Montée en compétences techniques (cybersécurité, DevSecOps, architecture) et business (développement commercial).',
+        role: 'Lead Technique · Développeur · DevSecOps',
       },
       {
         id: 3,
@@ -56,6 +64,13 @@ export const fr = {
         title: 'Développeur Full-Stack Freelance',
         description: 'Conception et déploiement de la marketplace "biggigui" en freelance.',
         role: 'Indépendant',
+      },
+      {
+        id: 1,
+        year: 'Oct 2025 - Présent',
+        title: 'Smart Contracts & Sécurité Web3 (Cyfrin Updraft)',
+        description: 'Parcours de certifications sur Cyfrin Updraft, dont une grande partie est déjà terminée : développement de Smart Contracts Solidity, principes fondamentaux de la blockchain et sécurité des portefeuilles Web3.',
+        role: 'Formation',
       },
       {
         id: 4,
@@ -67,9 +82,16 @@ export const fr = {
       {
         id: 5,
         year: 'Oct 2025 - Présent',
-        title: 'Projet de Mémoire Web3 (CryptoZombies)',
-        description: 'Création d\'une DApp pour la gestion de contrats traditionnels via NFT. Smart contract développé et déployé sur Testnet, intégration Frontend/Backend en finalisation.',
+        title: 'Projet de Mémoire Web3 — Cachetify',
+        description: 'Création de Cachetify (anciennement Contractify), plateforme de gestion de contrats : rédaction assistée par IA, signature multi-parties et preuve ancrée sur Polygon. Application fullstack et smart contract déployés.',
         role: 'Développeur Blockchain',
+      },
+      {
+        id: 13,
+        year: 'Mai 2025',
+        title: 'Initiation Blockchain & Solidity (CryptoZombies)',
+        description: 'Premiers pas dans le Web3 sur CryptoZombies : bases de la blockchain et fondamentaux du langage Solidity.',
+        role: 'Formation',
       },
       {
         id: 6,
@@ -134,8 +156,13 @@ export const fr = {
     projectsList: [
       {
         id: 1,
-        title: 'Contractify',
-        description: 'Plateforme de gestion de contrats basée sur les NFTs et la Blockchain Polygon. Gère la création, la signature et le respect des clauses.',
+        title: 'Cachetify',
+        description: 'Plateforme de gestion de contrats (anciennement Contractify) : rédaction assistée par IA, signature multi-parties sur Polygon et certificat vérifiable publiquement via QR code. Seule l\'empreinte du document est ancrée on-chain.',
+      },
+      {
+        id: 11,
+        title: 'BlueRoot',
+        description: 'Registre de preuves open source pour le carbone bleu communautaire (mangroves du Bénin). Zones en cellules H3, NDVI Sentinel-2, rapport IA consultatif, double validation humaine et crédits ERC-1155 avec part communautaire garantie par contrat.',
       },
       {
         id: 2,
@@ -143,19 +170,9 @@ export const fr = {
         description: 'Site web non responsive pour une salle de sport et de fitness fictive pour m\'entrainer.',
       },
       {
-        id: 3,
-        title: 'La Révélation API',
-        description: 'Backend pour une plateforme de réservation du complexe hôtelier La Révélation.',
-      },
-      {
         id: 4,
         title: 'Hackaton NASA 2025',
         description: 'Projet Apollon réalisé dans le cadre du Hackaton NASA 2025 qui est un moteur de recherche sur la base des articles de la NASA.',
-      },
-      {
-        id: 5,
-        title: 'Teido Pay',
-        description: 'Solution de paiement innovante. Projet d\'entrainement pour renforcer mes compétences.',
       },
       {
         id: 6,
@@ -170,7 +187,7 @@ export const fr = {
       {
         id: 8,
         title: 'La Révélation - Gestion Motel',
-        description: 'Application web de gestion pour le complexe hôtelier La Révélation. Digitalise le registre papier : suivi des stocks/boissons, chiffre d\'affaires hebdomadaire, accès sécurisé par code PIN pour la direction.',
+        description: 'Application Next.js fullstack de gestion du motel La Révélation, en production. Digitalise le registre papier : séjours par chambre, ventes et stocks (blocage du stock négatif), paiements et caisse, bilan journalier, authentification OTP email/Google et journal d\'audit.',
       },
       {
         id: 9,
@@ -183,6 +200,21 @@ export const fr = {
         description: 'DApp de vote décentralisé basée sur des smart contracts, garantissant la transparence et l\'immuabilité des résultats du scrutin.',
       }
     ]
+  },
+  openSource: {
+    title: "Contributions Open Source",
+    subtitle: "Des correctifs proposés sur des dépôts Web3 maintenus par d'autres équipes : lecture du code, reproduction du bug, correction et pull request.",
+    merged: 'Mergée',
+    open: 'En revue',
+    viewPr: 'Voir la PR',
+    allPrs: 'Toutes mes pull requests',
+    gitlabNote: "J'utilise aussi GitLab au quotidien en entreprise, sur des dépôts privés.",
+    items: {
+      'aratea-262': "Bug trouvé et corrigé dans PolicyRegistry : un seuil supérieur à 32767 débordait en int16 et déclenchait systématiquement l'indemnisation. Issue #261 ouverte puis corrigée.",
+      'zeus-9': "Correction de l'adresse du contrat d'escrow sur BOT Chain (677) dans le SDK et le frontend, pour pointer vers le contrat réellement déployé.",
+      'zeus-17': "Le frontend n'affiche le succès d'un dépôt en escrow qu'après un reçu de transaction réussi, et non plus dès l'envoi.",
+      'defi-1639': "Restauration de get_supported_gmx_chains(), cassée par la refonte des endpoints de l'API GMX, dans une librairie Python DeFi de Trading Strategy.",
+    },
   },
   contact: {
     title: "Prêt à collaborer ?",

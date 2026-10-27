@@ -30,11 +30,11 @@ export default function Footer() {
               <Github size={17} />
             </a>
             <a
-              href="https://twitter.com/Juste130"
+              href="https://x.com/houezojuste13"
               target="_blank"
               rel="noopener noreferrer"
               className="theme-toggle"
-              aria-label="Twitter"
+              aria-label="X (Twitter)"
             >
               <Twitter size={17} />
             </a>

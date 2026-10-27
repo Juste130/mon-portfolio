@@ -13,6 +13,6 @@ export const categorizedSkills = [
   },
   {
     category: 'Outils & IA',
-    items: ['Git', 'Docker', 'Vercel', 'Antigravity', 'Windsurf', 'Cursor', 'DeepSeek'],
+    items: ['Git', 'GitHub', 'GitLab', 'Docker', 'Vercel', 'Antigravity', 'Windsurf', 'Cursor', 'DeepSeek'],
   },
 ];
